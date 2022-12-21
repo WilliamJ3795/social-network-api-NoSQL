@@ -62,7 +62,7 @@ const ReactionSchema = new Schema(
       id: false,
     },
   )
-
+//Initialize Thought model
   const Thought = model('Thought', ThoughtSchema)
 
 ThoughtSchema.virtual('reactionCount').get(function () {
