@@ -28,3 +28,23 @@ const thoughtControl = {
           })
           .catch((err) => res.json(err))
       },
+      getThoughtById({ params }, res) {
+        Thought.findOne({ _id: params.id })
+          .then((dbThoughtData) => res.json(dbThoughtData))
+          .catch((err) => {
+            console.log(err)
+            res.status(500).json(err)
+          })
+      },
+      deleteThought({ params, body }, res) {
+        Thought.findOneAndDelete({ _id: params.id })
+          .then((deletedThought) => {
+            if (!deletedThought) {
+              return res
+                .status(404)
+                .json({ message: 'Not find thought with this ID!' })
+            }
+            res.json(deletedThought)
+          })
+          .catch((err) => res.json(err))
+      },
