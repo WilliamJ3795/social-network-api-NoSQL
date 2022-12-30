@@ -13,6 +13,7 @@
   - [Installation](#installation)
   - [Usage](#usage)
   - [Tech](#tech)
+  - [Links](#link)
   - [Questions](#questions)
 
   ## License
@@ -35,6 +36,11 @@
   - Node
   - MongoDB
   - Mongoose
+  
+  # Links
+  
+   [Link to demo pt.1 ](https://youtu.be/3AiNbTnfXWU/)
+   [Link to demo pt.2 ](https://youtu.be/FTc665MjWX4/)
 
   ## Questions
   if you have any questions about the repo, open an issue or contact me directly at williamj3795@gmail.com.
